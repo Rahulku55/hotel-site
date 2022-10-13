@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <link rel="stylesheet" href="css/tooplate-style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="nav1" class="navbar navbar-expand-lg nav-bg nav-1 navbar-dark">
+        <div class="container nav-container">
+          <div class="logo">
+            <img src="img/logo-2.png" alt="" class="img-logo" />
+          </div>
+
+          <div class="container-fluid">
+            <button
+              id="nav-scroll"
+              class="navbar-toggler custom-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarToggleExternalContent"
+              aria-controls="navbarToggleExternalContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Our Hotel</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#"
+                    >Our Brands</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="about.html"
+                    >About Us</a
+                  >
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    data-bs-toggle="dropdown"
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    About Us
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">About 1</a></li>
+                    <li><a class="dropdown-item" href="#">About 2</a></li>
+                    <li><a class="dropdown-item" href="#">About 3</a></li>
+                  </ul>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Offers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+              <a href="register.html"
+                ><button class="btn btn-outline-primary register-btn">
+                  REGISTER
+                </button></a
+              >
+              <a href="login.html"
+                ><button class="btn btn-outline-primary login-btn">
+                  LOGIN
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <nav id="nav2" class="navbar navbar-expand-lg nav-2">
+        <div class="container-fluid">
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="rooms.html"
+                  >Rooms</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="dining.html"
+                  >Dining</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="events.html"
+                  >Meetings and Events</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="facilities.html"
+                  >Facilities</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="gallery.html"
+                  >Gallery</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="testimonial.html"
+                  >Reviews</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="contact.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="collapse d-lg-none" id="navbarToggleExternalContent">
+        <div class="bg-light p-4">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Our Hotel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Brands</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Offers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rooms.html">Rooms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dining.html">Dining</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Meetings and Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="facilities.html">Facilities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="testimonial.html">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="login-section">
+      <form class="form" id="login-form" method="get" action="homepage.html">
+        <h3>Register</h3>
+
+        <!-- <label for="username">Username</label> -->
+        <input
+          type="text"
+          class="input"
+          placeholder="Full Name"
+          id="name"
+          name="name"
+        />
+
+        <input
+          class="input"
+          type="email"
+          placeholder="Email / Phone number"
+          id="username"
+          name="username"
+        />
+
+        <!-- <label for="password">Password</label> -->
+        <input
+          class="input"
+          type="password"
+          placeholder="Password"
+          id="password"
+          name="password"
+        />
+
+        <input
+          class="input"
+          type="tel"
+          placeholder="Phone number"
+          id="phone"
+          name="phone"
+        />
+
+        <!-- <div class="row row-mar">
+          <div class="col txt">
+            <input type="checkbox" value="lsRememberMe" id="rememberMe" />
+            <label class="w-80 padd" for="rememberMe">Remember me</label>
+          </div>
+        <div class="row row-mar">
+          <div class="col txt">
+            <input type="checkbox" value="lsRememberMe" id="rememberMe" />
+            <label class="w-80 padd" for="rememberMe">Remember me</label>
+          </div>
+          <dv class="col padd">
+            <a href="#">Forgot Password?</a>
+  
+          </div>
+        </div> -->
+        <input
+          type="submit"
+          value="register"
+          id="login-form-submit"
+          class="btn btn-primary btn-block mb-4 login"
+        />
+        <!--  <h3 class="login-otp">Login With OTP</h3>
+  
+        
+  
+        <div class="row login-brand">
+          <div class="col">
+            <div class="go">
+              <img src="images/google.jpg" alt="" class="google">
+              </div>
+          </div>
+          <div class="col">
+            <div class="go">
+              <img src="images/facebook.jpg" alt="" class="facebook">
+            </div>
+          </div>
+        </div> -->
+      </form>
+    </div>
+
+    <footer id="footer" class="bg-footer text-white">
+      <div class="container pt-5">
+        <div class="row py-4 px-2">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 widget">
+            <img
+              src="img/logo.png"
+              alt=""
+              width="100px"
+              height="100px"
+              class="mb-2"
+            />
+            <p class="font-italic text-muted footer-color">
+              Deshbandhu Rd,Rampur Hat, birbhum, West Bengal 731224<br />
+              Contact: 9883681816
+            </p>
+            <ul class="list-inline mt-4">
+              <li class="list-inline-item">
+                <a href="#" target="_blank" title="twitter">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" target="_blank" title="facebook"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" target="_blank" title="instagram"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" target="_blank" title="pinterest"
+                  ><i class="fa-brands fa-pinterest"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" target="_blank" title="vimeo"
+                  ><i class="fa-brands fa-vimeo"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <h6 class="text-uppercase font-weight-bold mb-4">Shop</h6>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a href="#" class="footer-link">For Women</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="footer-link">For Men</a>
+              </li>
+              <li class="mb-2"><a href="#" class="footer-link">Stores</a></li>
+              <li class="mb-2"><a href="#" class="footer-link">Our Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <h6 class="text-uppercase font-weight-bold mb-4">Company</h6>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><a href="#" class="footer-link">Login</a></li>
+              <li class="mb-2"><a href="#" class="footer-link">Register</a></li>
+              <li class="mb-2"><a href="#" class="footer-link">Wishlist</a></li>
+              <li class="mb-2">
+                <a href="#" class="footer-link">Our Products</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-lg-0">
+            <h6 class="text-uppercase font-weight-bold mb-4">Newsletter</h6>
+            <p class="text-muted mb-4 footer-color">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
+              itaque temporibus.
+            </p>
+            <div class="p-1 rounded border">
+              <div class="input-group">
+                <input
+                  type="email"
+                  placeholder="Enter your email address"
+                  aria-describedby="button-addon1"
+                  class="form-control border-0 shadow-0"
+                />
+                <div class="input-group-append">
+                  <button id="button-addon1" type="submit" class="btn btn-link">
+                    <i class="fa fa-paper-plane"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyrights -->
+      <div class="py-2 copy-bg">
+        <div class="container text-center">
+          <p class="text-muted mb-0 py-2 footer-color">
+            © 2022 All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="js/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="bootstrap.min.js"></script> -->
+
+    <script src="js/datepicker.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
